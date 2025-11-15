@@ -1,0 +1,90 @@
+.header {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+  padding: 3rem 2rem 0 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+}
+
+.primaryButton {
+  background: #1f2937;
+  color: white;
+}
+
+.primaryButton:hover {
+  background: #111827;
+  transform: translateY(-1px);
+}
+
+.secondaryButton {
+  background: white;
+  color: #1f2937;
+  border: 2px solid #1f2937;
+}
+
+.secondaryButton:hover {
+  background: #f9fafb;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.875rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}

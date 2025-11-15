@@ -1,0 +1,59 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
+}
+
+.main {
+  padding: 0rem 0 4rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 14rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.875rem 2rem;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  color: #1f2937;
+}
+
+.tab:hover {
+  border-color: #1f2937;
+}
+
+.tab.active {
+  background: #1f2937;
+  color: white;
+  border-color: #1f2937;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+  }
+}
